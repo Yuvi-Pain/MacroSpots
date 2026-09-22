@@ -32,7 +32,7 @@
 
 1.  Clone the repository:
     ```bash
-    git clone https://github.com/sunnyyy03/MacroSpots.git
+   git clone https://github.com/sunnyyy03/MacroSpots.git
     cd MacroSpots
     ```
 
