@@ -31,10 +31,10 @@
 ### Installation
 
 1.  Clone the repository:
-    ```bash
-   git clone https://github.com/Yuvi-Pain/MacroSpots.git
+```bash
+    git clone https://github.com/Yuvi-Pain/MacroSpots.git
     cd MacroSpots
-    ```
+```
 
 2.  Install dependencies:
     ```bash
