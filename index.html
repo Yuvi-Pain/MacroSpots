@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="description" content="MacroSpots — Find macro-friendly fast food options near you. Track your macros, discover healthy menu items, and hit your nutrition goals." />
+  <meta name="theme-color" content="#0f1117" />
+  <title>MacroSpots — Smart Fast Food Macro Finder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+  <!-- App CSS -->
+  <link rel="stylesheet" href="/src/styles/variables.css" />
+  <link rel="stylesheet" href="/src/styles/base.css" />
+  <link rel="stylesheet" href="/src/styles/components.css" />
+  <link rel="stylesheet" href="/src/styles/screens.css" />
+  <link rel="stylesheet" href="/src/styles/mapOverlay.css" />
+</head>
+<body>
+  <!-- Mobile Device Frame -->
+  <div id="app-frame">
+    <!-- Full-viewport Map (within frame) -->
+    <div id="map-container"></div>
+
+    <!-- Floating Search + Filters -->
+    <div class="map-search-overlay" id="map-overlay">
+      <div class="map-search-bar">
+        <svg class="map-search-bar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input class="map-search-bar__input" type="text" id="map-search-input" placeholder="Search restaurants or items..." aria-label="Search restaurants" />
+        <div class="map-search-bar__avatar">U</div>
+      </div>
+      <div class="map-filter-row" id="map-filter-row">
+        <button class="map-filter-chip" data-filter="drive_thru">🚗 Drive-Thru</button>
+        <button class="map-filter-chip" data-filter="high_protein">💪 High Protein</button>
+        <button class="map-filter-chip" data-filter="under500">🔥 &lt; 500 Cal</button>
+        <button class="map-filter-chip" data-filter="low_fat">🥑 Low Fat</button>
+      </div>
+    </div>
+
+    <!-- Bottom Sheet -->
+    <div id="bottom-sheet">
+      <div class="sheet-body">
+        <div class="sheet-handle" id="sheet-handle" role="slider" aria-label="Drag sheet">
+          <div class="sheet-handle__bar"></div>
+        </div>
+        <div class="sheet-ad">
+          <span class="sheet-ad__label">AD</span>
+          <span>🥗 Try MacroSpots Premium — Auto-track your macros!</span>
+        </div>
+        <div id="sheet-content"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <!-- App JS -->
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
