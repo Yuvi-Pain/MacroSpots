@@ -31,7 +31,7 @@
 ### Installation
 
 1.  Clone the repository:
-```bash
+   ```bash
     git clone https://github.com/Yuvi-Pain/MacroSpots.git
     cd MacroSpots
 ```
